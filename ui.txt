@@ -5,7 +5,7 @@ local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local PresetColor = Color3.fromRGB(255, 85, 0)
-local CloseBind = Enum.KeyCode.Y
+local CloseBind = Enum.KeyCode.K
 
 local ui = Instance.new("ScreenGui")
 ui.Name = "ui"
@@ -160,7 +160,7 @@ function lib:Window(text, preset, closebind)
 	MakeDraggable(DragFrame, Main)
 
 	local UserInputService = game:GetService("UserInputService")
-	local Chave = Enum.KeyCode.Y
+	local Chave = Enum.KeyCode.K
 	local uitoggled = false
 
 	function onKeyPress(inputObject, gameProcessedEvent)
